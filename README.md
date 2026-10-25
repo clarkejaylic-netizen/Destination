@@ -1,171 +1,272 @@
-# 🚌 Route Ready
-### School Bus Transportation & Route Management System
+# 🚌 DestinationGuide
+### Clear Routes. Confident Substitutes. Safer Preparation.
 
-**Route Ready** is a school transportation web application designed to help school administrators organize bus routes and student assignments while helping bus drivers navigate their routes more easily.
+**DestinationGuide** is a web application concept designed to improve how school transportation departments prepare substitute bus drivers for unfamiliar routes. It transforms route information into organized, easy-to-understand, printable guides so substitute drivers can review important instructions before beginning their route.
 
-The project focuses on making school bus transportation more organized, accessible, and efficient—especially for substitute drivers who may be unfamiliar with an assigned route.
+Built with **HTML, CSS, and vanilla JavaScript**, DestinationGuide demonstrates how simple, accessible web technology can improve an existing transportation workflow without requiring specialized hardware or a complicated system.
 
----
-
-## 🎯 Project Purpose
-
-Substitute bus drivers may have difficulty learning unfamiliar routes, identifying stops, and determining which students should board at each location. Administrators also need a straightforward way to manage buses, routes, stops, and student assignments.
-
-Route Ready aims to bring these tasks together in one website.
-
-## ✨ Key Features
-
-- **Bus Management:** Create, view, and manage buses.
-- **Route Management:** Organize routes and their stops in the correct order.
-- **Stop Management:** Create and organize pickup and drop-off locations.
-- **Student Management:** Assign students to buses, routes, and stops.
-- **Automatic Student Grouping:** Organize students by their assigned pickup or drop-off stop.
-- **Driver Dashboard:** Display route information in a clear, easy-to-follow layout.
-- **Substitute Driver Support:** Help substitute drivers understand their assigned bus, route, and stops.
-- **Student Check-In:** Track which students have been checked in at a stop.
-- **GPS and Map Support:** Provide a foundation for displaying bus location and route information.
-- **Persistent Prototype Data:** Save supported information locally so it can remain available after refreshing the website.
-
-*Features may vary depending on the current development version.*
+> **Project status:** Educational prototype in development. All demonstration accounts, routes, schools, and route information are fictional.
 
 ---
 
-## 🧑‍💼 Try the Administrator Experience
+## 🎯 The Problem: Important Information Can Get Lost
 
-The administrator side is designed for the person responsible for organizing the transportation system.
+When a regular school bus driver is absent, a substitute must take over a route they may not know well.
 
-**Demo account**
+They need to understand the stop sequence, estimated arrival times, road hazards, driving instructions, and other route-specific details. If this information is incomplete, outdated, or difficult to read, the substitute may spend valuable preparation time trying to clarify instructions.
 
-| Field | Demo credentials |
+Traditional paper route sheets are familiar and useful, but the process of creating, updating, and verifying them can be improved.
+
+**The central challenge is not simply finding a route. It is transferring reliable route knowledge from one person to another.**
+
+## 💡 The Solution
+
+DestinationGuide provides a straightforward workflow for organizing route information and generating standardized substitute-driver guides.
+
+Instead of replacing the paper-based process, the application improves it.
+
+### The Three-Step Workflow
+
+**1. CAPTURE — Organize Route Knowledge**
+
+Authorized staff enter route details, stops, schedules, driving instructions, and known hazards into a structured form.
+
+**2. TRANSFER — Generate a Route Guide**
+
+DestinationGuide organizes the information into a consistent, print-ready document that a substitute can review before departure.
+
+**3. NOTIFY — Identify Information That Needs Attention**
+
+A dashboard highlights route changes, missing information, and routes that require verification, helping transportation staff identify issues before preparing a substitute.
+
+This workflow is the foundation of the project.
+
+---
+
+## ✨ Core Features
+
+| Feature | Purpose |
 |---|---|
-| Role | Administrator |
-| Username | `admin.demo` |
-| Password | `AdminDemo123!` |
+| Route Dashboard | View available routes and their current statuses. |
+| Route Editor | Enter and update route details in one place. |
+| Stop Management | Organize stops, times, and instructions in sequence. |
+| Hazard Highlights | Make important road warnings easy to identify. |
+| Printable Route Guides | Generate a clean layout designed for paper. |
+| Route Verification | Display when route information was last reviewed. |
+| Dispatcher Alerts | Highlight incomplete routes and information requiring attention. |
+| Local Data Storage | Preserve demonstration data between browser sessions. |
 
-These are fictional demonstration credentials. They will work only if they are configured in the deployed version of the application.
+Features may be implemented incrementally as development progresses.
 
-### What to explore
+## 🧭 How DestinationGuide Works
 
-1. Open the administrator dashboard.
-2. Review the bus, route, stop, and student information.
-3. Explore how buses and routes are organized.
-4. Add or edit a fictional bus, route, or stop if the feature is available.
-5. Explore student assignments and automatic grouping by stop.
-6. Observe how administrator-managed information supports the driver experience.
+The following example illustrates how the application is intended to be used.
 
-**Judge's perspective:** Consider how easily a school administrator could organize transportation information and prepare a substitute driver for an unfamiliar route.
+### Step 1: Prepare a Route
+
+An authorized staff member opens the dashboard and selects an existing route or creates a new one.
+
+They enter the fictional route name, bus number, school, departure time, and stop details.
+
+### Step 2: Review the Information
+
+The staff member checks the stop sequence, driving notes, and potential hazards.
+
+The dashboard indicates whether the route has been verified or requires further review.
+
+### Step 3: Generate the Substitute Guide
+
+The staff member selects **Generate Route Sheet**.
+
+DestinationGuide organizes the information into a printable document containing:
+
+- Route identification and departure details
+- Stops in their intended sequence
+- Estimated arrival times
+- Route-specific instructions
+- Clearly highlighted hazard warnings
+- Verification date and review notes
+
+### Step 4: Prepare the Substitute Driver
+
+The transportation department prints the guide and provides it to the assigned substitute driver.
+
+The driver reviews the information before departure, following official district procedures and approved route documentation.
+
+### Step 5: Identify Future Updates
+
+If route information changes or required details are missing, the dashboard flags the route for staff review before another guide is generated.
+
+**The intended outcome:** less confusion during preparation, more consistent route documentation, and a clearer handoff between regular drivers, substitute drivers, and transportation staff.
 
 ---
 
-## 🚌 Try the Driver Experience
+## 🧪 Demonstration Scenario
 
-The driver side is designed to make route information easy to understand while minimizing unnecessary complexity.
+For project presentations, DestinationGuide can use a fictional school transportation scenario.
 
-**Demo account**
+**Example route:** North Route  
+**Bus:** Bus 12  
+**School:** Pinecrest Middle School  
+**Stops:** Five fictional stops  
+**Route notes:** Three sample instructions  
+**Hazard warning:** One simulated road hazard
 
-| Field | Demo credentials |
+A judge can follow the workflow from entering route information to generating the final printable guide.
+
+This demonstrates the complete concept without requiring access to a real transportation department or collecting student information.
+
+### Fictional Demo Login
+
+| Field | Value |
 |---|---|
-| Role | Driver / Substitute Driver |
-| Username | `driver.demo` |
-| Password | `DriverDemo123!` |
+| Role | Substitute Bus Driver |
+| Username | `sub.driver.demo` |
+| Password | `SubRouteDemo123!` |
+| Assigned Route | North Route — Bus 12 |
 
-These are fictional demonstration credentials. They will work only if they are configured in the deployed version of the application.
+These credentials are intended only for a mock demonstration if the login feature is implemented. They are not connected to a real authentication system by default.
 
-### What to explore
-
-1. Open the driver dashboard.
-2. Select the assigned bus and route if prompted.
-3. Review the ordered stops.
-4. Identify the current stop and the next stop.
-5. Review the students assigned to each stop.
-6. Test the student check-in feature if available.
-7. Follow the route progression and review the completion status.
-8. Explore the map or GPS features if enabled in the current version.
-
-**Judge's perspective:** Consider whether a substitute driver could understand the assigned route quickly without needing to memorize every stop in advance.
+The prototype should not be presented as having secure authentication unless that functionality has actually been built and tested.
 
 ---
 
-## 🔄 Example Workflow
+## 🏆 What Makes DestinationGuide Different?
 
-A typical Route Ready workflow follows this sequence:
+DestinationGuide is not intended to be another school bus tracking application.
 
-1. An administrator creates a bus.
-2. The administrator creates a route and adds stops in the correct order.
-3. Students are assigned to the appropriate buses, routes, and stops.
-4. Route Ready groups students according to their assigned stops.
-5. A regular or substitute driver selects the assigned bus and route.
-6. The driver reviews the stops and expected students.
-7. The driver progresses through the route and records student check-ins.
-8. The route is completed and its progress can be reviewed.
+Its focus is **route documentation, knowledge transfer, and preparation for substitute drivers**.
 
-This workflow demonstrates how administrator setup and driver navigation work together.
+| Common transportation workflow | DestinationGuide's approach |
+|---|---|
+| Route information may be maintained in different documents. | Organizes route details in a structured interface. |
+| Paper sheets can be difficult to standardize. | Generates a consistent printable layout. |
+| Route updates may not be obvious. | Highlights information that needs review. |
+| Verification dates may be overlooked. | Displays the last-reviewed date. |
+| Substitutes may need to clarify instructions. | Presents important details in a predictable format. |
 
----
+The project builds on a familiar practice rather than requiring drivers to learn a completely new in-vehicle system.
 
-## 🛠️ Technology
+Its primary innovation is the combination of structured route information, verification indicators, and print-ready handoff documentation in a lightweight web application.
 
-The project is being developed using web technologies:
-
-- **HTML** — Website structure
-- **CSS** — Layout, styling, and responsive design
-- **JavaScript** — Application behavior, route logic, and student grouping
-- **Local Storage** — Prototype data persistence
-- **Git and GitHub** — Version control and project collaboration
-
-Map services, live GPS, and a shared database can be integrated as the project develops.
+These are the project's intended differentiators, not a claim that no existing product offers similar features.
 
 ---
 
-## 🚀 How to Run the Project
+## 🛠️ Technology and Implementation
 
-### Option 1: Open locally
+DestinationGuide is designed to demonstrate what can be accomplished with fundamental web technologies.
 
-1. Clone or download this repository.
-2. Open the project folder in Visual Studio Code.
-3. Open `index.html` in a browser, or use the **Live Server** extension in VS Code if installed.
-4. Follow the website's navigation to explore the available features.
+- **HTML5:** Structures the dashboard, route editor, forms, and printable document.
+- **CSS3:** Provides responsive layouts, clear visual hierarchy, accessible contrast, and print-specific styling.
+- **Vanilla JavaScript:** Handles form interactions, route management, status indicators, and document generation.
+- **localStorage:** Stores prototype data locally in the browser.
 
-### Option 2: Visit the deployed website
+No frontend framework is required.
 
-**Live Demo:** [Insert your published website URL here]
+### How Printing Works
 
-**Repository:** [Insert your GitHub repository URL here]
 
-Replace these placeholders once the project is published.
 
 ---
 
-## 🧪 Testing Notes for Judges
+## 📁 Project Structure
 
-To evaluate the project, consider the following questions:
+```text
+DestinationGuide/
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+```
 
-- Can an administrator organize buses, routes, stops, and students?
-- Are students grouped under their assigned stops?
-- Can a driver identify the correct bus and route?
-- Is the next stop easy to identify?
-- Can student check-ins be recorded correctly?
-- Does the application handle missing or incorrect information?
-- Is the interface understandable for someone using the system for the first time?
+The project structure can expand as new features are implemented.
 
-Please use only fictional demonstration data.
+## 🚀 Running the Prototype
+
+### Requirements
+
+- A modern web browser
+- A code editor such as Visual Studio Code
+- Optional: the Live Server extension for local development
+
+### Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/DestinationGuide.git
+   ```
+
+2. Open the project directory:
+
+   ```bash
+   cd DestinationGuide
+   ```
+
+3. Open `index.html` in a browser, or launch the project using Live Server.
+
+4. Enter fictional route data and test the route sheet and print layout.
+
+Replace `YOUR-USERNAME` with the appropriate GitHub username after creating the repository.
+
+## 📈 Potential Impact
+
+DestinationGuide explores a small but meaningful opportunity to improve school transportation preparation.
+
+Its potential benefits include:
+
+- **Improved consistency:** Route information follows a standardized format.
+- **More efficient preparation:** Staff can organize and print instructions from one interface.
+- **Better information visibility:** Hazards and missing details are easier to identify.
+- **Clearer handoffs:** Substitutes receive organized information about an unfamiliar route.
+- **Accessible implementation:** The prototype uses widely available web technologies and ordinary printing hardware.
+
+These benefits are intended outcomes that should be evaluated through usability testing and feedback from transportation professionals. They are not yet measured results.
+
+## 🔮 Future Development
+
+Potential next steps include:
+
+- Secure staff authentication and role-based permissions
+- Shared, protected storage across authorized users
+- Route revision history and verification records
+- Improved PDF export and print formatting
+- Notifications for route changes
+- Accessibility and usability testing
+- Pilot testing with an approved school transportation department
+
+Any real-world deployment would require appropriate privacy, security, and transportation-safety reviews.
+
+## 🔐 Privacy and Safety Considerations
+
+DestinationGuide is an educational prototype, not a certified transportation safety system.
+
+- Demonstrations should use fictional routes, schools, and addresses.
+- Real student names, medical details, and pickup authorization information should not be entered into an unsecured prototype.
+- Browser `localStorage` is not suitable for storing sensitive student records.
+- A production implementation would need secure authentication, authorization, protected shared storage, and school district approval.
+- Route information must be verified against official district-approved documentation.
+- Printed guides should be handled and returned according to district procedures.
+- Drivers must review instructions before departure and must not interact with the application while driving.
+
+DestinationGuide supplements approved transportation procedures; it does not replace driver training, official route plans, or professional judgment.
+
+## 🎓 Project Objective
+
+DestinationGuide demonstrates how fundamental web development skills can be applied to a practical operational problem.
+
+By combining structured data entry, route verification, status indicators, and printable documentation, the project explores a simple way to improve the transfer of route knowledge between transportation staff and substitute drivers.
+
+Its guiding principle is:
+
+**Capture accurate information. Transfer it clearly. Notify staff when it needs attention.**
 
 ---
 
-## 🔐 Privacy and Security
+**Project:** DestinationGuide  
+**Category:** Web Development / Educational Technology / Transportation Operations  
+**Built with:** HTML, CSS, and JavaScript  
+**Status:** Prototype
 
-Route Ready is a student-developed prototype. The demonstration should use fictional student names, IDs, addresses, and transportation information.
 
-Local storage is intended for prototyping and is not a substitute for a secure, school-approved database. A production deployment would require appropriate authentication, role-based permissions, secure data storage, and safeguards for student privacy.
-
-The demo credentials above should not be reused for real accounts or sensitive systems.
-
----
-
-## 🌟 Project Vision
-
-The long-term goal of Route Ready is to create a practical transportation tool that helps administrators manage school bus information and helps drivers—particularly substitutes—follow assigned routes with greater clarity and confidence.
-
-By bringing route organization, stop information, student grouping, and driver navigation into one system, Route Ready aims to make transportation workflows easier to manage.
-
-**Thank you for reviewing Route Ready!**
