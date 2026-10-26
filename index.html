@@ -38,38 +38,31 @@
             </form>
         </div>
     </nav>
+
     <div class="sidebar">
         <div class="sidebar-header">
             <h5 style="font-family: 'Open Sans', sans-serif;">DESTINATION</h5>
             <h5 style="font-family: 'Changa', cursive;">GUIDE</h5>
         </div>
 
-        <div class="sidebar-menu">
-            <div class="active">
-                <i class="bi bi-house-door-fill">
-                    <a href="#">Home</a>
-                </i>
-            </div>
-            <div class="active">
-                <i class="bi bi-bus-front">
-                    <a href="#">Dashboard</a>
-                </i>
-            </div>
-            <div class="active">
-                <i class="bi bi-person-circle">
-                    <a href="#">Profile</a>
-                </i>
-            </div>
-            <div class="active">
-                <i class="bi bi-gear">
-                    <a href="#">Settings</a>
-                </i>
-            </div>
+        <div class="active">
+            <i class="bi bi-bus-front">
+                <a href="#">Dashboard</a>
+            </i>
+        </div>
+
+        <div class="active">
+            <i class="bi bi-gear">
+                <a href="#">Settings</a>
+            </i>
         </div>
     </div>
+    </div>
 
-    <!-- content -->
+
+    <!-- Main Content -->
     <main class="main-content">
+        <!-- Stops information -->
         <table class="card">
             <caption>Route Dashboard</caption>
             <thead>
@@ -125,18 +118,67 @@
                 </tr>
             </tbody>
         </table>
-        <div class="card">
-            <div class="notice">
-                <h4>Notifications</h4>
-            </div>
 
 
-                <div class="topbar">
-                    <div class="topbar-left">
-                        <div class="logo">⚡</div>
-                        <span class="app-name">Dashboard</span>
-                    </div>
+        <!-- Notification -->
+        <section class="card notification-section">
+            <div class="notification-heading">
+                <div class="notice">
+                    <h2>Notifications</h2>
+                    <p>Important route updates and reminders</p>
                 </div>
+
+                <div class="notification-list" id="notificationList">
+                    <article class="notification-card urgent" data-status="unread">
+                        <div class="notification-content">
+                            <div class="notification-topline">
+                                <span class="notification-type">Check Attendance</span>
+                            </div>
+                            <h3>North Route — Bus 12</h3>
+                            <p>A route update needs to be reviewed before departure.</p>
+                            <div class="notification-actions">
+                                <button class="notification-btn" onclick="markRead(this)">
+                                    Mark as read
+                                </button>
+                                <span class="status-label">Action needed</span>
+                            </div>
+                    </article>
+
+                    <article class="notification-card warning" data-status="unread">
+                        <div class="notification-content">
+                            <div class="notification-topline">
+                                <span class="notification-type">Verification</span>
+                            </div>
+                            <h3>Pines Middle School</h3>
+                            <p>The route guide needs verification by authorized staff.</p>
+                            <div class="notification-actions">
+                                <button class="notification-btn" onclick="markRead(this)">
+                                    Mark as read
+                                </button>
+                                <span class="status-label">Review needed</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="notification-card info" data-status="unread">
+                        <div class="notification-content">
+                            <div class="notification-topline">
+                                <span class="notification-type">Missing Information</span>
+                            </div>
+                            <h3>South Route — Demo</h3>
+                            <p>A stop instruction is missing from this fictional route guide.</p>
+                            <div class="notification-actions">
+                                <button class="notification-btn" onclick="markRead(this)">
+                                    Mark as read
+                                </button>
+                                <span class="status-label">Incomplete</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+        </section>
+
     </main>
 
     <!-- Bootstrap -->

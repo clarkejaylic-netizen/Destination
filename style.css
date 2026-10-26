@@ -19,14 +19,14 @@
        background-color: #f4f4f4;
        display: grid;
        height: 100vh;
-       grid-template-columns: 300px 1fr;
-       grid-template-rows: 60px 1fr;
+       grid-template-columns: 258px 1fr;
+       grid-template-rows: 59px 1fr;
        grid-template-areas:
            "sidebar header"
            "sidebar main";
    }
 
-   /* Sidebar Styles */
+   /* Sidebar + Navbar Styles */
    .sidebar {
        color: #fff;
        width: 258px;
@@ -36,6 +36,27 @@
        transform: translateX(0);
        transition: transform 0.3s ease;
        grid-area: sidebar;
+   }
+
+   .navbar .container-fluid {
+       width: 100%;
+       display: flex;
+       justify-content: space-between;
+   }
+
+   .search-form {
+       display: flex;
+       width: min(400px, 100%);
+   }
+
+   .navbar {
+       grid-area: header;
+       background-color: #2d080a;
+       width: 100%;
+       min-width: 0;
+       display: flex;
+       align-items: center;
+       z-index: 10;
    }
 
    .sidebar-header {
@@ -88,7 +109,6 @@
    /* Main Content Styles */
 
    .main-content {
-       margin-left: 258x;
        color: #ffcdbc;
        padding: 25px;
        min-width: calc(100% - 258px);
@@ -106,7 +126,7 @@
 
    .card {
        background-color: #ffcdbc;
-       border-radius: 10px;
+       border-radius: 5px;
    }
 
    .card:nth-child(1) {
@@ -136,7 +156,8 @@
    }
 
    th,
-   td {
+   td,
+   caption {
        padding: 15px 20px;
        text-align: left;
        border-bottom: 1px solid #ddd;
@@ -147,33 +168,129 @@
        color: white;
    }
 
-   .btn {
-       background-color: #FFA400;
-       width: 5px;
-       height: 10px;
-       align-items: center;
-       cursor: pointer;
-   }
-
    tr:nth-child(even) {
        background-color: lightcoral;
    }
 
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+   }
+
+   .notifications-section {
+       width: 100%;
+       padding: 0 20px;
+       color: #243447;
+   }
+
+   .notification-heading {
+       justify-content: space-between;
+       align-items: center;
+       gap: 12px;
+       margin-bottom: 20px;
+   }
+
+   .notification-heading h2 {
+       margin: 0 0 6px;
+       font-size: 25px;
+       font-weight: 700;
+   }
+
+   .notification-heading p {
+       margin: 0;
+       color: #718096;
+       font-size: 14px;
+   }
+
+   .notification-card:hover {
+       box-shadow: 0 5px 16px rgb(23 50 77 / 10%);
+   }
+
+   .notification-card.is-read {
+       opacity: 0.65;
+       background: #f8fafc;
+   }
+
+   .notification-content {
+       flex: 1;
+       min-width: 0;
+   }
+
+   .notification-topline {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       flex-wrap: wrap;
+       gap: 8px;
+       margin-bottom: 8px;
+   }
+
+   .notification-type {
+       color: #536779;
+       font-size: 11px;
+       font-weight: 800;
+       letter-spacing: 0.7px;
+       text-transform: uppercase;
+   }
+
+   .notification-content h3 {
+       margin: 0 0 7px;
+       font-size: 16px;
+       font-weight: 700;
+   }
+
+   .notification-content p {
+       margin: 0;
+       color: #627181;
+       font-size: 14px;
+       line-height: 1.5;
+   }
+
+   .notification-btn {
+       padding: 7px 11px;
+       border: 1px solid #ccd6df;
+       border-radius: 7px;
+       background: white;
+       color: #17324d;
+       font-size: 12px;
+       font-weight: 600;
+       cursor: pointer;
+   }
+
+
+
+   @media (max-width: 600px) {
+       .notifications-section {
+           padding: 0 12px;
+       }
+
+       .notification-card {
+           padding: 13px;
+           gap: 10px;
+       }
+
+       .notification-heading h2 {
+           font-size: 21px;
+       }
+   }
+
+
    /* Media Queries */
 
-   @media (max-width: 925px) {
+   @media (max-width: 920px) {
        .main-content {
-           grid-template-columns: min-max(300px, 1fr);
+           grid-template-columns: 300px;
            grid-row: 200px 200px;
            grid-template-areas: initial;
        }
 
        .card:nth-child(1) {
-           grid-area: initial;
+           grid-area: initial !important;
        }
 
        .card:nth-child(2) {
-           grid-area: initial;
+           grid-area: initial !important;
        }
 
    }
