@@ -30,87 +30,111 @@
 <body>
     <!-- sidebar -->
     <button class="sidebar-toggle">☰</button>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
     <div class="sidebar">
         <div class="sidebar-header">
             <h5 style="font-family: 'Open Sans', sans-serif;">DESTINATION</h5>
             <h5 style="font-family: 'Changa', cursive;">GUIDE</h5>
         </div>
-    </div>
-    <div class="sidebar-menu">
-        <div class="active">
-            <i class="bi bi-house-door-fill">
-                <a href="#">Home</a>
-            </i>
+
+        <div class="sidebar-menu">
+            <div class="active">
+                <i class="bi bi-house-door-fill">
+                    <a href="#">Home</a>
+                </i>
+            </div>
+            <div class="active">
+                <i class="bi bi-bus-front">
+                    <a href="#">Dashboard</a>
+                </i>
+            </div>
+            <div class="active">
+                <i class="bi bi-person-circle">
+                    <a href="#">Profile</a>
+                </i>
+            </div>
+            <div class="active">
+                <i class="bi bi-gear">
+                    <a href="#">Settings</a>
+                </i>
+            </div>
         </div>
-        <div class="active">
-            <i class="bi bi-bus-front">
-                <a href="#">Dashboard</a>
-            </i>
-        </div>
-        <div class="active">
-            <i class="bi bi-person-circle">
-                <a href="#">Profile</a>
-            </i>
-        </div>
-        <div class="active">
-            <i class="bi bi-gear">
-                <a href="#">Settings</a>
-            </i>
-        </div>
-    </div>
     </div>
 
     <!-- content -->
     <main class="main-content">
+        <table class="card">
+            <caption>Route Dashboard</caption>
+            <thead>
+                <tr>
+                    <th>ROUTES</th>
+                    <th>SCHOOLS</th>
+                    <th>ACTION</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bus #999</td>
+                    <td>Pines Middle School</td>
+                    <td class="print">
+                        <button>
+                            <a
+                                href="https://drive.google.com/file/d/1z-jhLJLN1RYZHcyt4ICRfzOQDD4CvhuJ/view?usp=sharing">Preview</a>
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Bus #888</td>
+                    <td>Pines Middle School</td>
+                    <td class="print">
+                        <button>
+                            <a
+                                href="https://drive.google.com/file/d/1z-jhLJLN1RYZHcyt4ICRfzOQDD4CvhuJ/view?usp=sharing">Preview</a>
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Bus #777</td>
+                    <td>Waterfalls Middle School</td>
+                    <td class="print">
+                        <button>
+                            <a
+                                href="https://drive.google.com/file/d/1z-jhLJLN1RYZHcyt4ICRfzOQDD4CvhuJ/view?usp=sharing">Preview</a>
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Bus #666</td>
+                    <td>Waterfalls Middle School</td>
+                    <td class="print">
+                        <button>
+                            <a
+                                href="https://drive.google.com/file/d/1z-jhLJLN1RYZHcyt4ICRfzOQDD4CvhuJ/view?usp=sharing">Preview</a>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
         <div class="card">
-            <table>
-                <thead>
-                    <tr>
-                        <th>STOPS</th>
-                        <th>SCHOOLS</th>
-                        <th>ACTION</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Bus #999</td>
-                        <td>Pines Middle School</td>
-                        <td class="btn"><a
-                                href="https://drive.google.com/file/d/1z-jhLJLN1RYZHcyt4ICRfzOQDD4CvhuJ/view?usp=sharing">Print</a>
-                        </td>
-                        <td>Preview</td>
-                    </tr>
+            <div class="notice">
+                <h4>Notifications</h4>
+            </div>
 
-                    <tr>
-                        <td>Bus #888</td>
-                        <td>Pines Middle School</td>
-                        <td class="btn">Print</td>
-                        <td>Preview</td>
-                    </tr>
 
-                    <tr>
-                        <td>Bus #777</td>
-                        <td>Waterfalls Middle School</td>
-                        <td class="btn"><a
-                                href="https://drive.google.com/file/d/1z-jhLJLN1RYZHcyt4ICRfzOQDD4CvhuJ/view?usp=sharing">Print</a>
-                        </td>
-                        <td class="btn">Preview</td>
-                    </tr>
-
-                    <tr>
-                        <td>Bus #666</td>
-                        <td>Waterfalls Middle School</td>
-                        <td class="btn"><a
-                                href="https://drive.google.com/file/d/1z-jhLJLN1RYZHcyt4ICRfzOQDD4CvhuJ/view?usp=sharing">Print</a>
-                        </td>
-                        <td class="btn">Preview</td>
-                    </tr>
-                </tbody>
-                </tabl>
-                <div class="card">
-                    <div class="notice">
-                        <h4>Notifications</h4>
-                        <i class="bi bi-bell-fill"></i>
+                <div class="topbar">
+                    <div class="topbar-left">
+                        <div class="logo">⚡</div>
+                        <span class="app-name">Dashboard</span>
                     </div>
                 </div>
     </main>
