@@ -11,6 +11,7 @@
 
    a {
        text-decoration: none;
+       color: #fff;
    }
 
    body {
@@ -18,7 +19,7 @@
        background-color: #f4f4f4;
        display: grid;
        height: 100vh;
-       grid-template-columns: 255px 1fr;
+       grid-template-columns: 300px 1fr;
        grid-template-rows: 60px 1fr;
        grid-template-areas:
            "sidebar header"
@@ -26,7 +27,6 @@
    }
 
    /* Sidebar Styles */
-
    .sidebar {
        color: #fff;
        width: 258px;
@@ -50,7 +50,6 @@
    }
 
    .sidebar-menu .active {
-       display: block;
        padding: 15px 20px;
        color: #fff;
        text-decoration: none;
