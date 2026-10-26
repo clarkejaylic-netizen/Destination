@@ -18,26 +18,56 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&family=Bitcount+Single:wght@100..900&family=Changa+One:ital@0;1&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <!-- sidebar -->
     <button class="sidebar-toggle">☰</button>
     <div class="sidebar">
         <div class="sidebar-header">
-            <h3>DESTINATION</h3>
+            <h5 style="font-family: 'Open Sans', sans-serif;">DESTINATION</h5>
+            <h5 style="font-family: 'Changa', cursive;">GUIDE</h5>
         </div>
-        <ul class="sidebar-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Settings</a></li>
-        </ul>
+        <div class="sidebar-menu">
+            <div class="active">
+                <i class="bi bi-house-door-fill">
+                    <a href="#">Home</a>
+                </i>
+            </div>
+            <div class="active">
+                <i class="bi bi-speedometer2">
+                    <a href="#">Dashboard</a>
+                </i>
+            </div>
+            <div class="active">
+                <i class="bi bi-person-circle">
+                    <a href="#">Profile</a>
+                </i>
+            </div>
+            <div class="active">
+                <i class="bi bi-gear">
+                    <a href="#">Settings</a>
+                </i>
+            </div>
+        </div>
     </div>
 
-    <div class="main-content shifted">
-        <p>Welcome to the main content area. This is where your primary content will be displayed.</p>
-    </div>
+    <!-- content -->
+    <main class="main-content">
+        <div class="card">
+
+        </div>
+        <div class="card">
+
+        </div>
+    </main>
 
     <!-- Bootstrap -->
     <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
